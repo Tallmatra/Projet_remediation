@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(27, 11, 71);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+     position: relative; 
+}
+#top{
+    height: 10vh;
+    display: flex;
+    background-color: rgb(46, 46, 136);
+    
+   }
+.search{
+    width: 20vh;
+    height: 5vh;
+    border-radius: 3vh;
+    border:0.4vh solid rgb(27, 11, 71);
+    background-color: rgb(27, 11, 71);
+    font-size: 2vh;
+    position: absolute; 
+    right: 0; 
+    margin-top:2vh ;
+    padding-left:2vh;
+    position: fixed;
+    z-index: 5;
+}
+.search:focus{
+    outline: 0;
+    background-color: rgb(46, 46, 136);
+}
+#center{
+    flex-wrap: wrap;
+    display: flex;
+}
+.center1{
+    height: 80vh; 
+    width: 22%;
+    margin: 3vh 4vh 1vh 2vh; 
+    background-color: rgb(46, 46, 136);
+    border-radius: 0.3vh;
+    box-shadow: 0 0.4vh 0.5vh rgba(0,0,0,0.1) ;
+    position: relative;
+    overflow: hidden;
+}
+.cnt1{
+     height: 10vh; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+img{
+    width: 100%;
+}
+
+.green{
+    margin-left: 15vh;
+        border: 0.1vh solid black;
+    background-color: black;
+}
+.text{
+    background-color: white; 
+    height: 20vh;
+    transform: translateY(103%);
+    transition:transform 0.3s ease-in;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1vh;
+    max-height: 100%;
+} 
+.center1 span{
+    margin-left: 15vh;
+    
+    border: 0.1vh solid black;
+    background-color: black;
+    padding: 0.5vh 0.5vh;
+
+}
+.center1:hover .text{
+    transform: translateY(0); 
+} 
+
+.center1 span.green{
+    color: lightgreen;
+}
+.center1 span.orange{
+    color: orange;
+}
+.center1 span.red{
+    color: red;
+}
+
+
